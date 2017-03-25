@@ -53,12 +53,11 @@ $(document).ready(function() {
 	//Subscribe Form
 
 	$('#mc-form').on("submit", function(){
+  	e.PreventDefault();
 		$(".response").addClass("active");
 	});
 
-	$("#mc-form").ajaxChimp({
-		url: mcUrl
-	});
+
 
 	//Countdown
 
